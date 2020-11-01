@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react'
 import './PictureOfDay.css'
 import { DoubleBorderSpinner } from 'react-fancy-loader'
 import Axios from 'axios'
+import { Token } from '../../config'
 
 export default function PictureOfDay() {
     const [data,setData]=useState(null)
     useEffect(() => {
         console.log("I am ini useEffect")
-       Axios.get("https://api.nasa.gov/planetary/apod?api_key="+process.env.TOKEN)
+       Axios.get("https://api.nasa.gov/planetary/apod?api_key="+Token)
        .then((res)=>
        {
             console.log(res)
