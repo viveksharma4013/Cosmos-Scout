@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Geostar+Fill&display=swap');
+
+.header{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nameHeader{
+    letter-spacing: 10px;
+    font-weight: lighter;
+    font-family: 'Geostar Fill', cursive;
+}
+
+.name{
+    font-weight: lighter;
+}

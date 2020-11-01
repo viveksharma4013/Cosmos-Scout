@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Geostar+Fill&display=swap');
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    align-items: center;    
+    font-family: 'Geostar Fill', cursive;
+    /* color: #191970; */
+}
+
+.item{
+    letter-spacing: 5px;
+}
