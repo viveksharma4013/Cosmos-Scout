@@ -1,0 +1,24 @@
+.textdisplay{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    height: fit-content;
+    background-color: #414950;
+    box-shadow: -10px -10px #888888;
+}
+.explanation{
+    margin: 5%;
+    line-height: 150%;
+}
+#image{
+    width: 30%;
+    height: 50vh;
+    margin-left: 10%;
+}
+
+.newsDisplay{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
