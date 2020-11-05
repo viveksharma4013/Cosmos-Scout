@@ -6,6 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: azure;
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
 }
 
 code {
@@ -13,9 +16,10 @@ code {
     monospace;
 }
 
-body::-webkit-scrollbar{
+/* body::-webkit-scrollbar{
   display: none;
-}
+} */
+
 *{
   margin:0;
 }

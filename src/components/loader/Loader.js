@@ -6,7 +6,7 @@ export default function Loader() {
         <>
               <DoubleBorderSpinner
                     size={50}
-                    color="#2a2a8f"
+                    color="#FFF"
                     outlineColor="#222"
                     stroke={4}
                     duration={700}

@@ -1,0 +1,24 @@
+.fabTop{
+    float: right;
+    position: sticky;
+    position: -webkit-sticky;
+    right: 10vh;
+    padding: 1%;
+    top: 0;
+    z-index: 10;
+}
+
+.fabBottom{
+    float: left;
+    position: sticky;
+    position: -webkit-sticky;
+    left: 5%;
+    padding: 1%;
+    top: 0;
+    z-index: 10;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+  }
+  

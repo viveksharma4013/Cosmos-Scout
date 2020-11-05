@@ -1,0 +1,70 @@
+.maps{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.mars{
+    height: 40%;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    /* justify-content: space-around; */
+    width: 60vw;
+}
+
+.moon{
+    height: 40%;
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    width: 60vw;
+}
+
+.marsImage{
+    margin-right: 5%;
+    width: 200px;
+    height: 200px;
+}
+
+#marsText{
+    margin: 10%;
+    margin-right: 0%;
+    margin-bottom: 1%;
+    padding: 5%;
+    width: 100%;
+    /* background-color: #373a3d; */
+    
+}
+#moonText{
+    margin: 10%;
+    margin-left:0%;
+    padding: 5%;
+    width: 100%;
+    /* background-color: #414950;
+    box-shadow: -10px -10px #888888; */
+}
+
+.moonImage{
+    margin-left: 5%;
+    width: 200px;
+    height: 200px;
+}
+.textandmore{
+    margin: 10%;
+    /* box-shadow: -10px -10px #373a3d; */
+    width: 80%;
+}
+
+.mapButton{
+    height: 50px;
+    width: 200px;
+    color: white;
+    border-radius: 50px;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}

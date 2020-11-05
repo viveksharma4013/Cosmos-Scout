@@ -4,8 +4,10 @@
     justify-content: space-around;
     align-items: center;
     height: fit-content;
-    background-color: #414950;
-    box-shadow: -10px -10px #888888;
+    color: #e7e7e7;
+    /* background-color: #414950;
+    box-shadow: -10px -10px #888888; */
+    box-shadow: -10px -10px #373a3d;
 }
 .explanation{
     margin: 5%;
