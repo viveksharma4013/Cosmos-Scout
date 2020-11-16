@@ -28,12 +28,12 @@ export default function Home() {
             <NavBar className="navbar"/>
             <Header/>
             <Maps/>
-            <ScrollAnimation animateIn="fadeInDown" delay="200">
+            <ScrollAnimation animateIn="fadeInDown" animateOut="fadeInDown" >
             <Element name="potd" className="element">
                 <PictureOfDay/>
             </Element>
             </ScrollAnimation>
-            <ScrollAnimation animateIn="fadeIn" duration="1" delay="100">
+            <ScrollAnimation animateIn="fadeIn" duration={1} delay="100">
             <Element name="gallery" className="element">
                 <Gallery/>
             </Element>

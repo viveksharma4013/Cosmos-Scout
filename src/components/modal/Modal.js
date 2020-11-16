@@ -2,13 +2,9 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 
-function rand() {
-  return Math.round(Math.random() * 20) - 10;
-}
-
 function getModalStyle() {
-  const top = 50 + rand();
-  const left = 50 + rand();
+  const top = 50 ;
+  const left = 50;
 
   return {
     top: `${top}%`,
@@ -20,47 +16,49 @@ function getModalStyle() {
 const useStyles = makeStyles((theme) => ({
   paper: {
     position: 'absolute',
-    width: 400,
-    color:"black",
-    backgroundColor: theme.palette.background.paper,
+    width: "fitContent",
+    height:"80%",
+    color:"white",
+    overflow:'scroll',
+    background: "#00000",
+    background: "-webkit-linear-gradient(to right, #000000, #434343)",
+    background: "linear-gradient(to right, #000000, #434343)", 
+    // background: "#bdc3c7",
+    // background: "-webkit-linear-gradient(to right, #2c3e50, #bdc3c7)",  
+    // background: "linear-gradient(to right, #2c3e50, #bdc3c7)", 
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
   },
+  image:{
+      width:"100%", 
+      height:"300px",
+      borderRadius:"10px",
+      marginTop:"10%",
+      marginBottom:"5%"
+  }
 }));
 
 export default function SimpleModal({data,openModal,setOpenModal}) {
   const classes = useStyles();
-  // getModalStyle is not a pure function, we roll the style only on the first render
   const [modalStyle] = React.useState(getModalStyle);
-  const [open, setOpen] = React.useState(openModal);
-
-  const handleOpen = () => {
-    setOpen(true);
-  };
 
   const handleClose = () => {
-    setOpen(false);
+    setOpenModal(false);
   };
 
   const body = (
     <div style={modalStyle} className={classes.paper}>
       <h2 id="simple-modal-title">{data?.title}</h2>
-      <img src={data?.imageLink}></img>
+      <img className={classes.image} alt="mission" src={data?.imageLink}></img>
       <p id="simple-modal-description">
         {data?.description}
       </p>
-      <button onClick={()=>{
-          setOpenModal(!openModal)
-      }}>OK</button>
     </div>
   );
 
   return (
     <div>
-      {/* <button type="button" onClick={handleOpen}>
-        Open Modal
-      </button> */}
       <Modal
         open={openModal}
         onClose={handleClose}

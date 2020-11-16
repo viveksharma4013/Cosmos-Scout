@@ -4,10 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom';
+import { applyMiddleware, compose,createStore } from 'redux';
+import allReducers from './reducers'
+import {Provider} from 'react-redux'
+import thunk from 'redux-thunk'
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+let store=createStore(allReducers,composeEnhancer(applyMiddleware(thunk)))
 
 ReactDOM.render(
     <BrowserRouter>
+    <Provider store={store}>
     <App />
+    </Provider>
     </BrowserRouter>,
   document.getElementById('root')
 );

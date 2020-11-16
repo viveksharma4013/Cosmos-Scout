@@ -6,6 +6,7 @@
     padding: 1%;
     top: 0;
     z-index: 10;
+    cursor: pointer;
 }
 
 .fabBottom{
@@ -16,9 +17,10 @@
     padding: 1%;
     top: 0;
     z-index: 10;
+    cursor: pointer
 }
 
 body::-webkit-scrollbar{
     display: none;
   }
-  
+

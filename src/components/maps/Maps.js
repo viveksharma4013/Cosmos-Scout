@@ -1,7 +1,7 @@
 import React from 'react'
 import './Maps.css'
 import ScrollAnimation from 'react-animate-on-scroll';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller, Button } from 'react-scroll'
+import {Element} from 'react-scroll'
 
 export default function Maps() {
     return (
@@ -9,7 +9,7 @@ export default function Maps() {
              <ScrollAnimation animateIn="fadeInLeft" delay="100">
              <Element name="maps" className="element">
             <div className="mars">
-                <img className="marsImage" 
+                <img alt="mars" className="marsImage" 
                     src="https://freesvg.org/img/Mars-3D-Globe.png">
                     </img>
                     <div className="textandmore">
@@ -28,7 +28,7 @@ export default function Maps() {
                         <button className="mapButton"  onClick={
                     ()=>{window.open("https://api.nasa.gov/vesta-wmts/catalog/global_LAMO.html", '_blank', 'noopener,noreferrer')}}>MAP</button>
                     </div>
-                <img className="moonImage"
+                <img alt="moon" className="moonImage"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Weather_icon_-_full_moon.svg/768px-Weather_icon_-_full_moon.svg.png">  
                     </img>
             </div>

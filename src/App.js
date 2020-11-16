@@ -7,10 +7,10 @@ function App() {
 dotEnv.config()
   return (
     <div className="App">
-      <switch>
+      <Switch>
       <Route path="/gallery" component={GalleryPage}/>
       <Route exact path="/" component={Home}/>
-      </switch>
+      </Switch>
     </div>
   );
 }

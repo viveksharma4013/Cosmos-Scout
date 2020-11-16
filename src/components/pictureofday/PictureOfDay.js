@@ -13,8 +13,8 @@ export default function PictureOfDay() {
        Axios.get("https://api.nasa.gov/planetary/apod?api_key="+Token)
        .then((res)=>
        {
-            console.log(res)
-            setData(res.data)
+            console.log(res.data)
+            setData(res.data.data)
         })
        .catch((e)=>
        {
